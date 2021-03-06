@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Fabricio Barbsoa Viegas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+		html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: auto;
+	font-family: arial;
+	background-color: black;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	z-index: 10;
+	background-color: #1A1A1A;
+	padding: 20px 10px;
+}
+
+#home{
+
+}
+
+#title a span{
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	font-size: 25px;
+	color: #0F0;
+	transition-duration: 0.5s;
+}
+
+#title a span:hover{
+	color: white;
+	transition-duration: 0.5s;
+}
+
+#title a{
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	font-size: 25px;
+	color: #0F0;
+	transition-duration: 0.5s;
+}
+
+#title a:hover{
+	color: white;
+	transition-duration: 0.5s;
+}
+
+#typewriting{
+	overflow: hidden;
+	border-right: .15em solid green;
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes blink-caret{
+	from, to{border-color: transparent}
+	50%{border-color: green;}
+}
+
+header li{
+	list-style: none;
+	font-size: 18px;
+	float: left;
+	color: white;
+	padding: 12px;
+	line-height: 25px;
+	transition-duration: 2s;
+}
+
+header #header-options li a:hover{
+	color: #0F0;
+}
+
+.active{
+	color: #0F0;
+}
+
+#header-options{
+	float: right;
+	margin-right: 2%;
+}
+
+label #sign-one,
+label #sign-two{
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 50px;
+	margin-right: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+#res-menu{
+	display: none;
+}
+
+@media screen and (max-width: 981px){
+
+	label #sign-one{
+		display: block;
+	}
+
+	header ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 50px;
+		left: -100%;
+		transition: .5s;
+		z-index: 10;
+	}
+
+	header ul li{
+		float: none;
+		line-height: 30px;
+	}
+
+	#header-options{
+		float: none;
+	}
+
+	#res-menu:checked ~ ul{
+		left: 0;
+		background-color: #1A1A1A;
+		float: left;
+	}
+
+	#res-menu:checked ~ label #sign-one{
+		display: none;
+	}
+
+	#res-menu:checked ~ label #sign-two{
+		display: block;
+	}
+
+	#containerPrincipalEscolaridade span{
+		font-size: 70%;
+	}
+
+}
+
+@media screen and (max-width: 425px){
+
+	#title a span{
+		font-size: 100%;
+	}
+
+	#title a{
+		font-size: 100%;
+	}
+	label #sign-one{
+		display: block;
+	}
+
+	header ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 50px;
+		left: -100%;
+		transition: .5s;
+		z-index: 10;
+	}
+
+	header ul li{
+		display: block;
+		float: none;
+		line-height: 30px;
+	}
+
+	#header-options{
+		float: none;
+	}
+
+	#res-menu:checked ~ ul{
+		left: 0;
+		background-color: #1A1A1A;
+		vertical-align: top;
+
+	}
+
+	#res-menu:checked ~ label #sign-one{
+		display: none;
+	}
+
+	#res-menu:checked ~ label #sign-two{
+		display: block;
+	}
+
+		#containerPrincipalEscolaridade span{
+		font-size: 70%;
+	}
+
+}
+
+#canvas{
+	position: absolute;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+}
+
+h2{
+	color: white;
+	text-align: center;
+	font-family: 'Share Tech Mono', monospace;
+
+}
+
+#subtitle{
+	font-size: 26px;
+	color: #0F0;
+}
+
+#name{
+	font-size: 60px;
+}
+
+#like{
+	font-size: 32px;
+}
+
+#like span{
+	color: #0F0;
+}
+
+#content{
+	display:inline-block;
+	width: 100%;
+	position:relative;
+	text-align: center !important;
+	top: 200px;
+}
+
+.typewrite{
+	pointer-events: none;
+	cursor: text;
+}
+
+#sobre{
+	background-color: black;
+	margin-top: 430px;
+	overflow: hidden;
+	padding: 20px 10px;
+}
+
+#container{
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+h3{
+	font-size: 50px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+p{
+	font-size: 16px;
+	font-family: 'Share Tech Mono', monospace;
+
+}
+
+#img{
+	width: 450px;
+	height: 553px;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+span{
+	color: #0F0;
+}
+
+#containerSobre{
+	margin-left: 50px;
+	color: white; 
+	display: inline-block; 
+	text-align: left;
+	vertical-align: top;
+    margin-top: 10px;
+    height: 100vh;
+}
+
+#btn{
+	color: #0F0;
+	border-color: #0F0;
+	background-color: black;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 14px;
+	border-style: solid;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+
+#btn:hover{
+	color: white;
+	border-color: white;
+	transition-duration: 0.2s;
+}
+
+#escolaridade{
+	margin-top: 110px;
+	overflow: hidden;
+	height: 100%;
+	
+}
+
+
+
+#containerPrincipalEscolaridade{
+	font-family: 'Share Tech Mono', monospace;
+	display: grid;
+	grid-template-columns: 1fr 3fr; 
+	vertical-align: text-top;
+}
+
+#atalhosEscolaridade{
+	list-style: none;
+	justify-self: center;
+	grid-column: 1/1;
+	width: 12%;
+	padding: 12px;
+	margin-left: 15px;
+	margin-top: 25%;
+}
+
+#atalhosEscolaridade li a{
+	font-style: bold;
+	color: white;
+	font-size: 16px;
+}
+
+#atalhosEscolaridade li a:hover{
+	color: #0F0;
+}
+
+#containerEscolaridade{
+	grid-column: 2/2;
+	padding: 10px;
+	margin-left: 15px;
+
+}
+
+#containerEscolaridade h3{
+	margin-top: 0;
+	color: white;
+	font-size: 35px;
+}
+
+#containerEscolaridade h4{
+	color: #0F0;
+	font-size: 24px;
+}
+
+#containerEscolaridade p{
+	color: white;
+	font-size: 18px;
+}
+
+#cursos{
+	vertical-align: text-top;
+	grid-column: 2/2;
+	height: 80%;
+	margin-left: 15px;
+}
+
+#cursos h3{
+	color: white;
+	font-size: 35px;
+}
+
+#cursos h4{
+	color: #0F0;
+	font-size: 24px;
+}
+
+#cursos p{
+	color: white;
+	font-size: 18px;
+}
+
+#verMais a:hover{
+	color: #0F0;
+}
+
+#skills{
+	grid-column: 2/2;
+	margin-top: 100px;
+}
+
+#skills h3{
+	color: white;
+	font-size: 35px;
+	margin-left: 15px;
+}
+
+#skillsContainer{
+	width: 600px;
+
+}
+
+#imgCorrection{
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+}
+
+#imgCorrection:hover{
+	opacity: 30%;
+}
+
+#imgCorrection2{
+	width: 45px; 
+	height: 52px;
+	padding: 15px;
+}
+
+#imgCorrection2:hover{
+	opacity: 30%;
+}
+
+#imgCorrection3{
+	width: 60px;
+	height: 60px;
+	margin-top: 1px;
+	padding: 15px;
+}
+
+#imgCorrection3:hover{
+	opacity: 30%;
+}
+
+#skills{
+	width: 100%;
+    margin-top: 200px;	
+}
+
+#skills h3{
+	color:white;
+	text-align: center;
+}
+
+#projetos{
+	width: 100%;
+    margin-top: 200px;
+}
+
+#containerProjetos{
+    justify-content: center;
+}
+
+#projetos h3{
+	color:white;
+	text-align: center;
+}
+
+.cards{
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	margin: 20px;
+	padding: 20px;
+	letter-spacing: 1px;
+	border: 2px solid black;
+	border-radius: 4px;
+	transition: all .3s ease;
+	background-color: #202020;
+	
+}
+
+.cards:hover{
+	opacity: 50%;
+}
+
+.cards h4{
+	font-size: 30px;
+	margin: 16px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-family: 'Share Tech Mono', monospace;
+	color: white;
+
+}
+
+.cards p{
+	font-size: 17px;
+	color: white;	
+}
+
+.cards ul{
+	margin-left: -50px;
+	list-style-type: circle;
+
+}
+
+.cards ul li{
+	display: inline-block;
+	color: #0F0;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.cards ul li:hover{
+}
+
+.cards .fas{
+	font-size: 70px;
+	margin: 16px 0;
+	color: #0F0;
+}
+
+.cards .fas:hover{
+
+}
+
+.cards .fab{
+	font-size: 70px;
+	margin: 16px 0;
+	border-color: #0D1218;
+	color: #0F0;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.cards .fab:hover{
+
+}
+
+.cards .material-icons{
+	font-size: 70px;
+	margin: 16px 0;
+	color: #0F0;
+}
+
+.cards .material-icons:hover{
+
+}
+
+.cards > *{
+	flex: 1 1 100%;
+
+}
+
+@media (max-width: 768px){
+#containerProjetos{
+	align-items: center;
+	width: 100%;
+}
+}
+
+@media (min-width: 1024px){
+#containerProjetos{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+}
+
+@media (max-width: 415px){
+	#mobile{
+		font-size: 70%;
+	}
+}
+
+@media (max-width: 900px){
+	.services{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+#contato{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#contato div h3{
+	color: white;
+	font-size: 35px;
+	margin-left: 15px;
+}
+
+#containerCards{
+	justify-content: center;
+}
+
+footer{
+	background-color: #181818;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-top-style: outset;
+    border-color: #0F0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #0F0;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: black;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #0F0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #0F0;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+footer p span a {
+	color: white
+}
+
+footer p span a:hover{
+	color: #0F0;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<input type="checkbox" id="res-menu">
+		<label for="res-menu">
+			<i class="fa fa-bars" id="sign-one"></i>
+			<i class="fa fa-times" id="sign-two"></i>
+		</label>
+				<li id="title" style="margin: 11px">
+			<a href="index.html">$
+				<span id="typewriting">Fabrício Barbosa Viegas</span>
+			</a>	
+		</li>
+		<ul>
+		<div id="header-options">
+			<div>
+				<li><a href="#home" class="active">Home</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#escolaridade">Escolaridade</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projetos">Projetos</a></li>
+				<li><a href="#contato">Contato</a>
+			</div>
+		</div>
+		</ul>
+	</header>
+	<section id="home" data-type="Home">
+		<div id="intro">
+			<canvas id="canvas" resize hidpi=off>
+			</canvas>
+			<div id="content" align="center">
+				<h2 id="subtitle">Olá! Eu sou</h2>
+				<h2 id="name">Fabrício Barbosa Viegas</h2>
+				<h2 id="like">Gosto de <a href="" class="typewrite" data-period="500" data-type='["resolver problemas.", "desenvolver software.", "ler.", "aprender novas tecnologias."]'><span class="wrap"></span></a></h2>
+			</div>
+			<br>
+		</div>
+	</section>
+	<section id="sobre"  data-type="Sobre">
+		<div id="container" align="center">
+			<img src="/img/perfil.jpg">
+				<h3>Sobre mim:</h3>
+				<div id="about">
+					<p>Nome: <span id="typewriting">Fabrício Barbosa Viegas</span></p>
+					<p>Idade: <span id="typewriting">16</span></p>
+					<p>Cidade: <span id="typewriting">Camaquã</span></p>
+					<p>Endereço: <span id="typewriting">R. Cel Boa Ventura Soares</span></p>
+					<p>Bairro: <span id="typewriting">Vila Nova</span></p>
+					<p>Nº: <span id="typewriting">557</span></p><br>
+					<p>Precisa de um curriculo formal?</p>
+					<a href="https://drive.google.com/file/d/1ZzuC5kDTvHIH67KfbMqYLRL6Q5gzHQNx/view?usp=sharing" target="_blank"><input type="button" value="Clique aqui" id="btn"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="escolaridade" data-type="Escolaridade">
+		<div id="containerPrincipalEscolaridade">
+			<div id="containerEscolaridade">
+				<h3>Escolaridade:</h3>
+				<h4><span id="typewriting">>> I.E.E Conêgo Luiz Walter Hanquet</span></h4>
+				<p>>>> Curso Normal/Magistério</p>
+				<p>>>> 2º ano</p>
+				<p style="color: red;">!!! Cursando !!!</p>
+			</div>
+			<div id="cursos" data-type="Cursos">
+				<h3>Cursos:</h3>
+				<h4><span id="typewriting">>> Harvard CS50</span></h4>
+				<p>>>> Introduction to the intellectual enterprises of computer science and <br> the art of programming.</p>
+				<p>>>> 20/01/2021</p>
+				<p id="verMais"><a href="https://cs50.harvard.edu/x/" target="_blank">>> Ver mais!</a></p>
+				<br>
+				<h4><span id="typewriting">>> Curso em video</span></h4>
+				<p>>>> Algoritmo</p>
+				<p>>>> 10/08/2018</p>
+				<p>>>> PHP</p>
+				<p>>>> 16/03/2019</p>
+				<p>>>> MySQL</p>
+				<p>>>> 28/04/2019
+				<p>>>> Python 3</p>
+				<p>>>> 23/05/2019</p>
+				<p>>>> Javascript</p>
+				<p>>>> 23/07/2019</p>
+				<p>>>> Marketing Digital</p>
+				<p>>>> 29/11/2019</p>
+				<p id="verMais"><a href="https://www.cursoemvideo.com/" target="_blank">>> Ver mais!</a></p>
+				<br>
+				<h4><span id="typewriting">>> Exattus escola de profissões</span></h4>
+				<p>>>> Informática Básica</p>
+				<p>>>> 29/10/2015</p>
+				<p>>>> Inglês Básico</p>
+				<p>>>> 11/01/2016</p>
+				<p>>>> Photoshop Básico</p>
+				<p>>>> 11/03/2016</p>
+				<p>>>> Web Designer</p>
+				<p>>>> 09/11/2019</p>
+				<p id="verMais"><a href="https://www.exattuscamaqua.com.br/nossoscursos/informatica/" target="_blank">>> Ver mais!</a>
+				<br></p>
+			</div>
+	</section>
+	<section id="skills">
+		<div>
+			<h3>Skills:</h3>
+		</div>
+		<div id="containerProjetos">
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=html" target="_blank"><div class="cards">
+				<div class="fab fa-html5"></div>
+				<h4>HTML5</h4>
+				<ul>
+					<li>Linguagem de marcação</li>
+				</ul>
+				<p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=css" target="_blank"><div class="cards">
+				<div class="fab fa-css3-alt"></div>
+				<h4>CSS3</h4>
+				<ul>
+					<li>Linguagem de estilo</li>
+				</ul>
+				<p>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML. O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=javascript" target="_blank"><div class="cards">
+				<div class="fab fa-js-square"></div>
+				<h4>Javascript</h4>
+				<ul>
+					<li>Linguagem de programção</li>
+				</ul>
+				<p>JavaScript é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js,  Apache CouchDB e Adobe Acrobat. </p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-php"></div>
+				<h4>PHP</h4>
+				<ul>
+					<li>Linguagem de programação</li>
+				</ul>
+				<p>O PHP é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=python" target="_blank"><div class="cards">
+				<div class="fab fa-python"></div>
+				<h4>Python</h4>
+				<ul>
+					<li>Linguagem de programação</li>
+				</ul>
+				<p>Python é uma linguagem de programação de alto nível, dinâmica, interpretada, modular, multiplataforma e orientada a objetos, usado especialmente em grandes projetos que envolvam ciência de dados.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas?tab=repositories&q=&type=&language=c" target="_blank"><div class="cards">
+				<div class="fab fa-cuttlefish"></div>
+				<h4>C</h4>
+				<ul>
+					<li>Linguagem de programação</li>
+				</ul>
+				<p>Pode ser usada em diversos tipos de projeto, como a criação de aplicativos, sistemas operacionais, drivers, entre outros. Trata-se de uma linguagem estruturada que se tornou muito popular nos anos 80 — tanto que é difícil encontrar arquiteturas para as quais não existam compiladores para a C, o que garante o seu elevado nível de portabilidade.</p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-linux"></div>
+				<h4>Linux</h4>
+				<ul>
+					<li>Sistema operacional</li>
+				</ul>
+				<p>Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em um computador e outros dispositivos. Linux pode ser livremente modificado e distribuído.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" target="_blank"><div class="cards">
+				<div class="fab fa-node-js"></div>
+				<h4>Node.js</h4>
+				<ul>
+					<li>Ambiente de execução Javascript</li>
+				</ul>
+				<p>Node.js é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript.</p>
+			</div></a>
+			<a><div class="cards">
+				<div class="fab fa-envira"></div>
+				<h4>MongoDB</h4>
+				<ul>
+					<li>Banco de Dados</li>
+				</ul>
+				<p>MongoDB é um banco de dados de código aberto, gratuito, de alta performance, sem esquemas e orientado à documentos.</p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" target="_blank"><div class="cards">
+				<div class="fas fa-database"></div>
+				<h4>MySQL</h4>
+				<ul>
+					<li>Banco de Dados</li>
+				</ul>
+				<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" target="_blank"><div class="cards">
+				<div class="fas fa-database"></div>
+				<h4>MariaDB</h4>
+				<ul>
+					<li>Banco de Dados</li>
+				</ul>
+				<p>MariaDB é um gerenciador de banco de dados que surgiu como fork do MySQL, criado pelo próprio fundador do projeto após sua aquisição pela Oracle.</p>
+			</div></a>
+			<a><div class="cards">
+				<div class="fab fa-wordpress"></div>
+				<h4>Wordpress</h4>
+				<ul>
+					<li>Sistema de Gestão de Conteúdo</li>
+				</ul>
+				<p>WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online.</p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-git-alt"></div>
+				<h4>Git</h4>
+				<ul>
+					<li>Sistema de controle de versões</li>
+				</ul>
+				<p>Git é um sistema de controle de versão de arquivos. Através dele pode-se desenvolver projetos no qual diversas pessoas podem contribuir simultaneamente, editando e criando novos arquivos, permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.</p>
+			</div></a>
+			<a><div class="cards">
+				<div class="fas fa-photo-video"></div>
+				<h4>Photoshop</h4>
+				<ul>
+					<li>Software de edição</li>
+				</ul>
+				<p>Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais do tipo raster desenvolvido pela Adobe Systems. É considerado o líder no mercado dos editores de imagem profissionais, assim como o programa de facto para edição profissional de imagens digitais e trabalhos de pré-impressão.</p>
+			</div></a>
+		</div>
+	</section>
+	<section id="projetos" data-type="Projetos">
+		<div>
+			<h3>Projetos:</h3>
+		</div>
+		<div id="containerProjetos">
+			<a href="#home"><div class="cards">
+				<div class="fas fa-terminal"></div>
+				<h4>Meu Currículo</h4>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ul>
+				<p>Um currículo completo, com desing retrô imitando um termial digno de um filme de Hollywood.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/Sistema-de-anotacoes-simples" target="_blank"><div class="cards">
+				<div class="fas fa-book"></div>
+				<h4>Sistema de anotações simples</h4>
+				<ul>
+					<li>Node</li>
+					<li>Javascript</li>
+				</ul>
+				<p>Um bloco de notas simples, capaz de categorizar e organizar suas notas usando apenas Node js.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/sistema-de-reproducao-de-audios-em-js" target="_blank"><div class="cards">
+				<div class="material-icons">equalizer</div>
+				<h4>Sistema de Reprodução de áudios</h4>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ul>
+				<p>Um sistema de streaming de áudio em javascript.</p>
+			</div></a>
+		</div>
+		<div id="containerProjetos">
+			<a href="https://github.com/fabriciobarbosaviegas/sistema-de-reproducao-de-audios-em-js" target="_blank"><div class="cards">
+				<div class="material-icons">password</div>
+				<h4>Formulário Animado</h4>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ul>
+				<p>Um formulário de login simples estilizado usando Javascript e CSS.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/Flappy-py" target="_blank"><div class="cards">
+				<div class="fas fa-gamepad"></div>
+				<h4>Flap-py</h4>
+				<ul>
+					<li>Python</li>
+					<li>Pygame</li>
+				</ul>
+				<p>O clássico jogo mobile flapy-bird refeito inteiramente em python usando a biblioteca pygame.</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/luhn-algorithm-in-c-language-with-cs50-library" target="_blank"><div class="cards">
+				<div class="fas fa-credit-card"></div>
+				<h4>algoritmo de luhn</h4>
+				<ul>
+					<li>C</li>
+				</ul>
+				<p>Sistema de validação de cartões de crédito usando o algoritmo de luhn.</p>
+			</div></a>
+		</div>
+	</section>
+	<section id="contato" data-type="Contato">
+		<div>
+			<h3>Contato:</h3>
+		</div>
+		<div id="containerProjetos">
+			<a><div class="cards">
+				<div class="fab fa-whatsapp"></div>
+				<p>Telefone para<span style="opacity: 0">aa</span> contato/whatsapp:</p>
+				<p>(51)997279808</p>
+			</div></a>
+			<a href="mailto:propostasfabriciobarbosa@gmail.com" target="_blank"><div class="cards">
+				<div class="fas fa-at"></div>
+				<p>E-mail para contato:</p>
+				<p id="mobile">propostasfabriciobarbosa@gmail.com</p>
+			</div></a>
+			<a href="https://github.com/fabriciobarbosaviegas/" target="_blank"><div class="cards">
+				<div class="fab fa-github"></div>
+				<p>GitHub/Mais projetos:</p>
+				<p>/fabriciobarbosaviegas</p>
+			</div></a>
+		</div>
+	</section>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>Sobre mim</h2>
+          <div class="content">
+            <p style="color: white">Gosto de trabalhar com novas ferramentas e tecnologias, buscando sempre aprimorar minhas abilidades como desenvolvedor.</p>
+            <div class="social">
+              <a href="https://github.com/fabriciobarbosaviegas/"><span class="fab fa-github"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Contato</h2>
+          <div class="content">
+            <div class="phone">
+              <span class="fas fa-phone-alt"  style="font-size: 100%"></span>
+              <span class="text" style="font-size: 100%">(51)997279808</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-at"  style="font-size: 100%"></span>
+              <span class="text" style="font-size: 100%">propostasfabriciobarbosa@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Links</h2>
+          <div class="content">
+          	<p><span><a href="#home">Home</a></span></p>
+          	<p><span><a href="#sobre">Sobre</a></span></p>
+          	<p><span><a href="#escolaridade">Escolaridade</a></span></p>
+          	<p><span><a href="#skills">Skills</a></span></p>
+          	<p><span><a href="#projetos">Projetos</a></span></p>
+          	<p><span><a href="#contato">Contato</a></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
