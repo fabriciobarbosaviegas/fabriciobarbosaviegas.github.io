@@ -122,7 +122,6 @@ label #sign-two{
 
 	label #sign-one{
 		display: block;
-		margin-top: 10px;
 	}
 
 	header ul{
@@ -156,7 +155,6 @@ label #sign-two{
 
 	#res-menu:checked ~ label #sign-two{
 		display: block;
-		margin-top: 10px;
 	}
 
 	#containerPrincipalEscolaridade span{
@@ -176,7 +174,6 @@ label #sign-two{
 	}
 	label #sign-one{
 		display: block;
-		margin-top: 10%;
 	}
 
 	header ul{
@@ -212,7 +209,6 @@ label #sign-two{
 
 	#res-menu:checked ~ label #sign-two{
 		display: block;
-		margin-top: 10%;
 	}
 
 		#containerPrincipalEscolaridade span{
