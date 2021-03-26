@@ -110,10 +110,19 @@ label #sign-two{
 	display: none;
 }
 
+@media screen and (max-height: 375px){
+
+	#subtitle{
+		font-size: 10px;
+	}
+
+}
+
 @media screen and (max-width: 981px){
 
 	label #sign-one{
 		display: block;
+		margin-top: 10px;
 	}
 
 	header ul{
@@ -147,6 +156,7 @@ label #sign-two{
 
 	#res-menu:checked ~ label #sign-two{
 		display: block;
+		margin-top: 10px;
 	}
 
 	#containerPrincipalEscolaridade span{
@@ -166,6 +176,7 @@ label #sign-two{
 	}
 	label #sign-one{
 		display: block;
+		margin-top: 10%;
 	}
 
 	header ul{
@@ -201,6 +212,7 @@ label #sign-two{
 
 	#res-menu:checked ~ label #sign-two{
 		display: block;
+		margin-top: 10%;
 	}
 
 		#containerPrincipalEscolaridade span{
@@ -246,6 +258,35 @@ h2{
 	position:relative;
 	text-align: center !important;
 	top: 200px;
+}
+
+@media screen and (max-height: 375px){
+
+	 #title a{
+	 	font-size: 100%
+	 }
+
+	 #title a span{
+	 	font-size: 100%;
+	 }
+
+	#content{
+		margin-top: 20%;
+		position: sticky;
+	}	
+
+	#subtitle{
+		font-size: 100%;
+	}
+
+	#name{
+		font-size: 200%;
+	}
+
+	#like{
+		font-size: 100%
+	}
+
 }
 
 .typewrite{
