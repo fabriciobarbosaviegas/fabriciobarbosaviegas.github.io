@@ -451,19 +451,33 @@ span{
 
 #containerPrincipalEscolaridade{
 	font-family: 'Share Tech Mono', monospace;
+	display: grid;
+	grid-template-columns: 1fr 3fr; 
 	vertical-align: text-top;
 }
 
 #atalhosEscolaridade{
 	list-style: none;
 	justify-self: center;
+	grid-column: 1/1;
 	width: 12%;
 	padding: 12px;
 	margin-left: 15px;
 	margin-top: 25%;
 }
 
+#atalhosEscolaridade li a{
+	font-style: bold;
+	color: white;
+	font-size: 16px;
+}
+
+#atalhosEscolaridade li a:hover{
+	color: #0F0;
+}
+
 #containerEscolaridade{
+	grid-column: 2/2;
 	padding: 10px;
 	margin-left: 15px;
 
@@ -487,8 +501,9 @@ span{
 
 #cursos{
 	vertical-align: text-top;
+	grid-column: 2/2;
 	height: 80%;
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 #cursos h3{
