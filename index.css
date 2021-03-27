@@ -427,6 +427,18 @@ span{
 
 }
 
+@media screen and (max-width: 375px){
+
+	#containerSobre{
+	    color: white;
+	    display: inline-block;
+	    text-align: left;
+	    vertical-align: top;
+	    margin-top: 10px;
+	    height: 100%;
+	}
+	
+}
 
 #escolaridade{
 	margin-top: 110px;
