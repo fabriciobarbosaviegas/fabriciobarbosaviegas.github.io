@@ -176,6 +176,10 @@ label #sign-two{
 		padding: 5px, 10px;
 	}
 
+	header li{
+		font-size: 95%;
+	}
+
 	#title a span{
 		font-size: 100%;
 	}
@@ -296,6 +300,9 @@ h2{
 	#like{
 		font-size: 100%
 	}
+
+
+
 }
 
 .typewrite{
@@ -312,7 +319,6 @@ h2{
 
 #container{
 	overflow: hidden;
-	margin-top: 30px;
 }
 
 h3{
@@ -387,6 +393,40 @@ span{
 	border-color: white;
 	transition-duration: 0.2s;
 }
+@media screen and (max-height: 415px){
+
+	#sobre {
+	    background-color: black;
+	    margin-top: 130px;
+	    overflow: hidden;
+	    padding: 40px 10px;
+	}
+
+	#img {
+	    width: 40%;
+	    height: 40%;
+	}
+
+	#sobre p{
+		font-size: 80%;
+	}
+
+	#sobre h3{
+		font-size: 200%;
+	}
+
+
+	#btn{
+		background-color: black;
+	    color: #0F0;
+	    border-radius: 10px 10px 10px 10px;
+	    border-color: #0F0;
+	    font-size: 70%;
+	}
+
+
+}
+
 
 #escolaridade{
 	margin-top: 110px;
