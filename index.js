@@ -1,3 +1,12 @@
+var supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
+location.reload();
+}, false);
+
+
+
 var sections = document.querySelectorAll("section");
 
 onscroll = function () {
