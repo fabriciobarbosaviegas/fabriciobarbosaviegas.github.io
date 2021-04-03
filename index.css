@@ -271,7 +271,19 @@ h2{
 	width: 100%;
 	position:relative;
 	text-align: center !important;
-	top: 200px;
+	top: 35vh;
+}
+
+@media screen and (max-width: 425px){
+
+	#content{
+		display:inline-block;
+		width: 100%;
+		position:relative;
+		text-align: center !important;
+		top: 25vh;
+	}
+
 }
 
 @media screen and (max-height: 415px){
