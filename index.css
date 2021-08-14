@@ -902,7 +902,7 @@ footer{
   }
   .main-content{
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
   }
   .main-content .box{
     margin: 5px 0;
