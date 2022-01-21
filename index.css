@@ -55,7 +55,7 @@ header{
 #typewriting{
 	overflow: hidden;
 	border-right: .15em solid green;
-	white-space: nowrap;
+	white-space: break-spaces;;
 	margin: 0 auto;
 	animation: 
     typing 3.5s steps(40, end),
@@ -428,6 +428,10 @@ span{
 		font-size: 200%;
 	}
 
+	#sobre #typewriting{
+		white-space: break-spaces;
+	}
+
 
 	#btn{
 		background-color: black;
@@ -449,6 +453,7 @@ span{
 	    vertical-align: top;
 	    margin-top: 10px;
 	    height: 100%;
+		margin-left: 2rem;
 	}
 	
 }
