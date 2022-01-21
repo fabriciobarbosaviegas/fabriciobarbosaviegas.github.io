@@ -470,7 +470,7 @@ span{
 #containerPrincipalEscolaridade{
 	font-family: 'Share Tech Mono', monospace;
 	display: grid;
-	grid-template-columns: 1fr 3fr; 
+	margin-left: 1rem; 
 	vertical-align: text-top;
 }
 
