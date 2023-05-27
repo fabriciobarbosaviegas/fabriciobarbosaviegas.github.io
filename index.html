@@ -3799,6 +3799,14 @@
 			}());</script>
 		<script src="/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
 		<script>
+			
+			var supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
+location.reload();
+}, false);
+
 
 			var canvas = document.querySelector('canvas'),
 				ctx = canvas.getContext('2d');
