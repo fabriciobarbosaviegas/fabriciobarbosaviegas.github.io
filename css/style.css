@@ -115,7 +115,10 @@ a:hover{
     opacity: .5 !important;
     color: black;
 }
-
+.card-img{height:100vh;object-fit:cover;}
+	
+	
+	
 #skills h3{
 	color:white;
 	text-align: center;
