@@ -1,3 +1,13 @@
+var supportsOrientationChange = "onorientationchange" in window,
+
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
+
+location.reload();
+
+}, false);
+
 window.addEventListener('scroll', () => {
     let nav = document.querySelector('nav');
     if (window.scrollY > 0 && !nav.classList.contains("fixed-top")){
