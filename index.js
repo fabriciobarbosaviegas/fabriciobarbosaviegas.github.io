@@ -7,7 +7,7 @@ location.reload();
 
 
 
-var sections = document.querySelectorAll("section");
+var sections = document.querySelectorAll(".section");
 
 onscroll = function () {
 
