@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
 })
 
 
-var sections = document.querySelectorAll("section");
+var sections = document.querySelectorAll(".section");
 
 onscroll = function () {
 
