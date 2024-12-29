@@ -340,7 +340,7 @@
             <div class="container justify-content-center mt-5">
                 <div class="row">
                     <div class="col">
-                        <form action="https://api.staticforms.xyz/submit" method="post" class="fadeInUp-scroll g-recaptcha" data-sitekey="6LeISqgqAAAAAPgG9qABOyirnFRGBsbTQiTW17u_">
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="fadeInUp-scroll" id="contato">
                             <!-- 2 column grid layout with text inputs for the first and last names -->
                             <div class="row mb-4">
                             <div class="col">
@@ -372,7 +372,10 @@
                             </div>
                             <div class="my-5 text-center">
                                 <!-- Submit button -->
-                                <button type="submit" class="btn fs-5 btn-primary btn-block mb-4 bg-lime border-0 fs-5">Enviar</button>
+                                <button type="submit" class="btn fs-5 btn-primary btn-block mb-4 bg-lime border-0 fs-5 g-recaptcha"
+                                data-sitekey="6LeISqgqAAAAAPgG9qABOyirnFRGBsbTQiTW17u_"
+                                data-callback='onSubmit'
+                                data-action='submit'>Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -441,11 +444,8 @@
     <script src="js/main.js"></script>
     <script src="js/animate.js"></script>
     <script>
-        function onClick(e) {
-          e.preventDefault();
-          grecaptcha.enterprise.ready(async () => {
-            const token = await grecaptcha.enterprise.execute('6LeISqgqAAAAAPgG9qABOyirnFRGBsbTQiTW17u_', {action: 'LOGIN'});
-          });
+        function onSubmit(token) {
+            document.getElementById("contato").submit();
         }
       </script>
 </body>
